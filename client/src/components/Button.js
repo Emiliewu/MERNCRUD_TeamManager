@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 
 export default function Button (props) {
-  const { player} = props;
+  const {player} = props;
   const game = player.game;
   const {gameId} = useParams();
   const stat = game[gameId-1];
